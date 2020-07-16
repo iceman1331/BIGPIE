@@ -4,15 +4,20 @@ body {
     min-width: inherit;
     min-height: inherit;
         }
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 700px) 
 {
-    .tm-video-container{width: 50%;}
+    .tm-video-container{width: auto;
+    height: auto;
+    }
+    .tm-video-text {width:25%;
+    }
      
 }
 
 @media screen and (max-width: 720px) 
 {
 .tm-video-container{width: 100%;}
+    .tm-video-text {width:100%;}
 }
 html 
     {
@@ -140,12 +145,10 @@ h3 {
     -webkit-text-fill-color: transparent;
     position:inherit;
     vertical-align: middle;
-    margin-bottom: 70px;
-    margin-left: 450px;
     text-align: center;
-    align-self: center;
     display: inline-block;
-    font-size: 2rem;
+    font-size:2rem; 
+    
 }
 
 .tm-welcome-video {
@@ -162,11 +165,12 @@ h3 {
 
 .tm-video-text-overlay {
     position: absolute;
-    left: 300px;
-    bottom: 30px;
+    left: 10px;
+    bottom: 200px;
+    font-size: 3rem;
 }
 .tm-video-text-overlay h1 {
-	font-size: 3.4rem;
+	font-size: 1rem;
 }
 .tm-welcome-text {
     border-radius:  200px 1500px;
