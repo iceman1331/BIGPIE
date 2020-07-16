@@ -1,17 +1,18 @@
 @-ms-viewport {
   width: device-width; }
-body {
+body {  
     min-width: inherit;
     min-height: inherit;
         }
+@media screen and (max-width: 600px) 
+{
+    .tm-video-container{width: 50%;}
+     
+}
 
 @media screen and (max-width: 720px) 
 {
-
-    html, body 
-    {
-    min-width: 320px; 
-    } 
+.tm-video-container{width: 100%;}
 }
 html 
     {
