@@ -1,12 +1,14 @@
 @-ms-viewport {
   width: device-width; }
 body {
-    -ms-overflow-style: scrollbar; 
+    min-width: inherit;
+    min-height: inherit;
         }
 
 @media screen and (max-width: 720px) 
 {
-  html, body 
+
+    html, body 
     {
     min-width: 320px; 
     } 
