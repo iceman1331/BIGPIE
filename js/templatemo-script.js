@@ -1,4 +1,8 @@
 // https://codepen.io/AmruthPillai/pen/axvqB
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
 (function ($) {
     $.fn.extend({
         rotaterator: function (options) {

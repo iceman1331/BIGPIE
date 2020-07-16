@@ -17,6 +17,9 @@
 </head>
 
 <body>
+    <div class="loader">
+        <img src="img/Loader.gif" >
+    </div>
 
     <div class="container">
         <div class="row">
@@ -36,7 +39,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="tm-video-container">
-                    <video controls id="tm-welcome-video" class="tm-welcome-video" autoplay="" muted="">
+                    <video controls id="tm-welcome-video" class="tm-welcome-video" autoplay muted="">
                         <source src="videos/BIGPIE.mp4" type="video/mp4"> Your browser does not support the video tag.
                         </video>
                         <div id="tm-video-loader">...</div>
@@ -63,7 +66,7 @@
                 <div class="col-lg-12">
                     <div class=" tm-timeline-item">
                         <div class="tm-timeline-item-inner">
-                            <img src="img/DNA2.png" alt="Image" class="rounded-circle tm-img-timeline">
+                            <img src="img/DNA2.jpg" alt="Image" class="rounded-circle tm-img-timeline">
                             <div class="tm-timeline-connector">
                                 <p class="mb-0">&nbsp;</p>
                             </div>
@@ -81,7 +84,7 @@
 
                     <div class="tm-timeline-item">
                         <div class="tm-timeline-item-inner">
-                            <img src="img/Pills2.png" alt="Image" class="rounded-circle tm-img-timeline">
+                            <img src="img/Pills2.jpg" alt="Image" class="rounded-circle tm-img-timeline">
                             <div class="tm-timeline-connector">
                                 <p class="mb-0">&nbsp;</p>
                             </div>
@@ -98,7 +101,7 @@
 
                     <div class="tm-timeline-item">
                         <div class="tm-timeline-item-inner">
-                            <img src="img/Synbio.png" alt="Image" class="rounded-circle tm-img-timeline">
+                            <img src="img/Synbio.jpg" alt="Image" class="rounded-circle tm-img-timeline">
                             <div class="tm-timeline-connector">
                                 <p class="mb-0">&nbsp;</p>
                             </div>
@@ -115,7 +118,7 @@
 
                     <div class="tm-timeline-item">
                         <div class="tm-timeline-item-inner">
-                            <img src="img/Circle.png" alt="Image" class="rounded-circle tm-img-timeline">
+                            <img src="img/Circle.jpg" alt="Image" class="rounded-circle tm-img-timeline">
                             <div class="tm-timeline-connector">
                                 <p class="mb-0">&nbsp;</p>
                             </div>
@@ -165,6 +168,13 @@
     <script src="js/jquery.min.js"></script>
     <!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
     <script src="js/templatemo-script.js"></script>
-
+        
+    <script type="text/javascript">
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden"; // new class = "loader hidden"    
+        });
+    </script>
+    
 </body>
 </html>
