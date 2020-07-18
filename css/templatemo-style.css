@@ -1,24 +1,6 @@
 @-ms-viewport {
   width: device-width; }
-body {  
-    min-width: inherit;
-    min-height: inherit;
-        }
-@media screen and (max-width: 700px) 
-{
-    .tm-video-container{width: auto;
-    height: auto;
-    }
-    .tm-video-text {width:25%;
-    }
-     
-}
 
-@media screen and (max-width: 720px) 
-{
-.tm-video-container{width: 100%;}
-    .tm-video-text {width:100%;}
-}
 html 
     {
     box-sizing: border-box; 
@@ -91,7 +73,6 @@ h3 {
 .tm-site-logo {
     width: auto;
     height: auto;
-    border: 1px white;
     transform: rotate(0deg);
     display: inline-block;
     vertical-align: middle;
@@ -106,9 +87,10 @@ h3 {
 
 .tm-site-header {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     margin-bottom: 0px;
-    color: black;
+    background: ;
+    border-radius:  15px 50px;
     text-shadow: -3px 1px 2px rgba(150, 150, 150, 0.64); 
 }
 
@@ -131,8 +113,6 @@ h3 {
 }
     
 .tm-video-container {
-    position: relative;
-    margin:auto;
     box-shadow:
                 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
                 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -140,9 +120,24 @@ h3 {
                 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
                 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
                 0 100px 80px rgba(0, 0, 0, 0.12);
-    max-width: 1000px;
-    max-height: 563px;
-    border: 500px white;
+    max-width: 78%;
+    min-width: 78%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tm-welcome-video {
+    display: block;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    background-color: black;
+    background-size: contain;
+    transition: 1s opacity;
 }
 
 .tm-video-text {
@@ -153,20 +148,7 @@ h3 {
     vertical-align: middle;
     text-align: center;
     display: inline-block;
-    font-size:2rem; 
-    
-}
-
-.tm-welcome-video {
-    max-width: 100%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 100;
-    background-color: black;
-    background-size:contain;
-    transition: 1s opacity;
+    font-size: 2rem; 
 }
 
 .tm-video-text-overlay {
@@ -175,13 +157,15 @@ h3 {
     bottom: 200px;
     font-size: 3rem;
 }
+
 .tm-video-text-overlay h1 {
 	font-size: 1rem;
 }
+
 .tm-welcome-text {
     border-radius:  200px 1500px;
     background: linear-gradient(to right, #009865,#006634);
-    text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px green;
+    color: white;
     margin-top: 65px;
     vertical-align: middle;
     margin-bottom: 65px;
