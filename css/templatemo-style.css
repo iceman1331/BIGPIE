@@ -28,10 +28,14 @@ html
   box-sizing: inherit; }
 
 body {
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), 
+    /*background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), 
                 radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     background-blend-mode: multiply,multiply;
-    color: #FFFFFF;
+    
+    */
+background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+ background-blend-mode: screen;
+    
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-weight: 300;
     overflow-x: hidden;
@@ -104,6 +108,8 @@ h3 {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 0px;
+    color: black;
+    text-shadow: -3px 1px 2px rgba(150, 150, 150, 0.64); 
 }
 
 #tm-video-loader {
@@ -193,7 +199,7 @@ h3 {
 }
 
 .tm-text-gray {
-    color: #CCCCCC;
+    color: linear-gradient(to right, #1f1c2c, #928dab);
 }
 
 .tm-text-white {
@@ -260,13 +266,13 @@ box-shadow: -13px 13px 29px -1px rgba(0,0,0,0.64);
 .tm-timeline-connector {
     width: 55px;
     height: 3px;
-    background-color: white;
+    background-color: black;
 }
 
 .tm-timeline-connector-vertical {
     height: 60px;
     width: 3px;
-    background-color: darkblue;
+    background-color: darkgrey;
     margin-left: 260px;
 }
 
